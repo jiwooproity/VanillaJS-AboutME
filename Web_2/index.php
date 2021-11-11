@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <title>브레이브걸스 & 피어레스</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="main-log">
+                <div class="main-log__width">
+                    <ul class="main-log__list">
+                        <li class="main-log__item">
+                            <a class="main-log__link" href="#">로그인</a>
+                        </li>
+                        <li class="main-log__item">
+                            <a class="main-log__link" href="#">회원가입</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <header class="main-header">
+                <div class="main-header__width">
+                    <nav class="main-nav__left">
+                        <h1 class="main-nav__logo">
+                            BRAVEGIRLS
+                        </h1>
+                    </nav>
+                    <div class="main-nav__right">
+                        <ul class="main-nav__list">
+                            <li class="main-nav__item">
+                                <a class="main-nav__link" class="" href="#">앨범</a>
+                            </li>
+                            <li class="main-nav__item">
+                                <a class="main-nav__link" href="#">멤버</a>
+                            </li>
+                            <li class="main-nav__item">
+                                <a class="main-nav__link" href="#">엔터테이먼트</a>
+                            </li>
+                            <li class="main-nav__item">
+                                <a class="main-nav__link" href="https://cafe.daum.net/BraveGirls0409" target="_blank">팬카페</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </header>
+
+            <div class="main-content">
+                <div class="main-content__width">
+                    <h2 class="main-content__subtitle">
+                        브레이브걸스 1854일의 기적
+                    </h2>
+                    <h1 class="main-content__title">
+                        롤린 Rollin' 인기가요 1위
+                    </h1>
+                    <h1 class="main-content__title_2">
+                        2021.03.14
+                    </h1>
+                    <div class="main-content__middle">
+                        <a class="main-content__link" href="#move_encore">무대 보러가기</a>
+                    </div>
+                    <span class="material-icons arrow_size">expand_more</span>
+                </div>
+            </div>
+
+            <div id="move-encore" class="main-content__encore">
+                <div class="main-content__mvWidth">
+                    <div class="main-content__mvInfo">
+                        <span class="main-content__part">Part. 1</span>
+                        <h1>브레이브걸스 1854일의 기적</h1>
+                        <h2>2021.03.14 | MCountDown 1위</h2>
+                        <p>2016년 데뷔한 2기 멤버 <span class="black_span">민영, 유정, 은지, 유나</span>로 구성된 4인조 걸그룹</p>
+                        <p>5년동안 무명의 걸그룹이었지만 <span class="black_span">Rollin'</span>의 역주행으로 많은 사랑을 받고있다.</p>
+                    </div>
+                    <div class="main-content__mv">
+                        <iframe src="https://www.youtube.com/embed/bpAYc0D0tXs" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <div class="third-content">
+                <div class="third-content__width">
+                    <div class="third-content__album">
+                        <img class="third-content__albumImg" src="img/썸머퀸_사진.png">
+                    </div>
+                    <div class="third-content__albumInfo">
+                        <span class="main-content__part">Part. 2</span>
+                        <h1>SUMMER QUEEN</h1>
+                        <h2>2021.06.17 | The 5th Mini Album</h2>
+                        <p>2021년 6월 17일에 발매된 <span>브레이브걸스의 미니 5집 앨범</span>이다.</p>
+                        <p>롤린의 역주행 이후 발매된 첫 번째 앨범이며, 현 4명의 멤버만 참여한
+                        첫번째 미니앨범이기도 하다.</p>
+                        <div class="content-music__frame">
+                            <div class="content-music__width">
+                                <a class="content-music__link" href="https://www.youtube.com/watch?v=e70PkoJhQYM">
+                                    유튜브에서 듣기
+                                </a>
+                            </div>
+                            <div class="content-mIcons__width">
+                                <span class="material-icons">
+                                    skip_next
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <footer>
+
+            </footer>
+        </div>
+        <script src="js/move.js"></script>
+    </body>
+</html>

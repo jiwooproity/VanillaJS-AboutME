@@ -1,0 +1,256 @@
+.main-content {
+    width: 100%;
+    height: 550px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: white;
+}
+
+.main-content__width {
+    width: 1200px;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content__part {
+    font-weight: 600;
+    font-size: 30px;
+
+    margin-bottom: 50px;
+
+    color: var(--main-color);
+}
+
+.main-content__subtitle {
+    font-size: 25px;
+
+    margin-top: 70px;
+
+    color: var(--subtitle-color);
+}
+
+.main-content__title {
+    font-size: 60px;
+
+    padding-top: 20px;
+}
+
+.main-content__title_2 {
+    font-size: 40px;
+
+    padding-top: 20px;
+
+    color: var(--text-color);
+}
+
+.main-content__middle {
+    width: 100%;
+    display: flex;
+    justify-content: inherit;
+    align-items: center;
+}
+
+.main-content__link {
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+
+    width: 180px;
+    height: 60px;
+
+    line-height: 60px;
+
+    margin-top: 100px;
+
+    border: 0px solid;
+    border-radius: 30px;
+
+    transition: 0.2s ease-in-out;
+
+    background-color: var(--main-color);
+    color: white;
+}
+
+.arrow_size {
+    font-size: 50px;
+
+    margin-top: 30px;
+
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.main-content__encore {
+    width: 100%;
+    height: 400px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgb(248, 246, 255);
+}
+
+.main-content__mvWidth {
+    width: 1140px;
+    height: 400px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-content__mvInfo {
+    width: 50%;
+    height: 400px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.main-content__mvInfo h1 {
+    font-size: 40px;
+
+    color: var(--subtitle-color);
+}
+
+.main-content__mvInfo h2 {
+    padding: 10px 0px 50px 0px;
+
+    color: var(--text-color);
+}
+
+.main-content__mvInfo p {
+    font-size: 15px;
+
+    padding: 5px 0px 5px 0px;
+
+    color: var(--text-color);
+}
+
+.black_span {
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.main-content__mv {
+    width: 50%;
+    height: 400px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content__mv iframe {
+    width: 556px;
+    height: 313px;
+
+    border-radius: 30px;
+    box-shadow: 0px 5px 15px 0px;
+}
+
+.third-content {
+    width: 100%;
+    height: 600px;
+    background-color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.third-content__width {
+    width: 1140px;
+    height: 600px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.third-content__album {
+    width: 50%;
+    height: 600px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.third-content__albumImg {
+    width: 560px;
+}
+
+.third-content__albumInfo {
+    width: 50%;
+    height: 600px;
+
+    padding: 87px 0px 0px 30px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.third-content__albumInfo h1 {
+    font-size: var(--title-text);
+
+    color: var(--subtitle-color);
+}
+
+.third-content__albumInfo h2 {
+    padding: 10px 0px 50px 0px;
+
+    color: var(--text-color);
+}
+
+.third-content__albumInfo p {
+    font-size: var(--info-text);
+
+    padding: 5px 0px;
+
+    color: var(--text-color)
+}
+
+
+.third-content__albumInfo p span {
+    font-size: var(--info-bold);
+    font-weight: 600;
+
+    color: var(--info-bold)
+}
+
+.content-music__frame {
+    width: 100%;
+
+    padding-top: 20px;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.content-music__link {
+    font-weight: 600;
+    text-decoration: none;
+
+    color: var(--main-color);
+}
+
+.content-mIcons__width {
+    padding-top: 4px;
+}
+
+.active {
+    background-color: rgba(66, 20, 236, 0.8);
+}
