@@ -1,0 +1,23 @@
+.moveTop {
+    cursor: pointer;
+
+    width: 35px;
+    height: 35px;
+
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    box-shadow: 0px 1px 1px 0px;
+
+    background-color: var(--main-color);
+}
+
+.moveTop span {
+    font-size: 30px;
+    color: white;
+}

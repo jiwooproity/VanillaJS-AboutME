@@ -1,0 +1,14 @@
+.blink {
+    animation: blink 1s infinite;
+    font-size: 4rem;
+
+    color: #626262;
+
+    padding-top: 20px;
+}
+
+@keyframes blink {
+    to {
+        opacity: 0;
+    }
+}

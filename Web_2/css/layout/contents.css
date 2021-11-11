@@ -36,8 +36,16 @@
     color: var(--subtitle-color);
 }
 
+.main-content__title_width {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .main-content__title {
     font-size: 60px;
+
+    color: #2a2a2a;
 
     padding-top: 20px;
 }
@@ -58,6 +66,8 @@
 }
 
 .main-content__link {
+    cursor: pointer;
+
     font-size: 20px;
     font-weight: 600;
     text-align: center;
@@ -249,6 +259,10 @@
 
 .content-mIcons__width {
     padding-top: 4px;
+}
+
+.content-mIcons__width span {
+    color: var(--main-color);
 }
 
 .active {

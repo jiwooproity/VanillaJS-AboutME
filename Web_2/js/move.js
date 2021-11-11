@@ -1,13 +1,9 @@
-const go_btn = document.querySelector(".main-content__link");
+const go_btn_hover = document.querySelector(".main-content__link");
 
-function active() {
-    go_btn.classList.toggle("active");
-}
+go_btn_hover.addEventListener("mouseover", function() {
+    go_btn_hover.classList.toggle("active");
+});
 
-go_btn.addEventListener("mouseover", active);
-
-function active() {
-    go_btn.classList.toggle("active");
-}
-
-go_btn.addEventListener("mouseout", active);
+go_btn_hover.addEventListener("mouseout", function() {
+    go_btn_hover.classList.toggle("active");
+});
