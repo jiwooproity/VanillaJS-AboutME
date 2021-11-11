@@ -142,6 +142,7 @@
 
 .main-nav__link {
     text-decoration: none;
+    cursor: pointer;
 
     color: var(--text-color);
 }

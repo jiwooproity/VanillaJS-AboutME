@@ -30,13 +30,13 @@
                     <div class="main-nav__right">
                         <ul class="main-nav__list">
                             <li class="main-nav__item">
-                                <a id="cd_menu" class="main-nav__link" href="#">앨범</a>
+                                <a id="cd_menu" class="main-nav__link">앨범</a>
                             </li>
                             <li class="main-nav__item">
                                 <a class="main-nav__link" href="#">멤버</a>
                             </li>
                             <li class="main-nav__item">
-                                <a class="main-nav__link" href="#">엔터테이먼트</a>
+                                <a class="main-nav__link" href="http://www.bravesound.com/" target="_blank">엔터테이먼트</a>
                             </li>
                             <li class="main-nav__item">
                                 <a class="main-nav__link" href="https://cafe.daum.net/BraveGirls0409" target="_blank">팬카페</a>
@@ -98,7 +98,7 @@
                             </p>
                             <div class="content-music__frame">
                                 <div class="content-music__width">
-                                    <a class="content-music__link" href="https://www.youtube.com/watch?v=e70PkoJhQYM">
+                                    <a class="content-music__link" href="https://www.youtube.com/watch?v=e70PkoJhQYM" target="_blank">
                                         유튜브에서 듣기
                                     </a>
                                 </div>
