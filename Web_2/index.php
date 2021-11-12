@@ -61,7 +61,9 @@
                     <div class="main-content__middle">
                         <a class="main-content__link">무대 보러가기</a>
                     </div>
-                    <span class="material-icons arrow_size">expand_more</span>
+                    <div class="arrow-icon_width">
+                        <span class="material-icons arrow_size focus_ani">expand_more</span>
+                    </div>
                 </div>
             </div>
 
@@ -143,6 +145,7 @@
             </div>
         </div>
 
+        <script src="js/header_change.js"></script>
         <script src="js/text_Typing.js"></script>
         <script src="js/scroll.js"></script>
         <script src="js/move.js"></script>

@@ -78,6 +78,8 @@
     background-color: white;
 
     z-index: 2;
+
+    transition: 0.3s ease-in-out;
 }
 
 .main-header__width {
