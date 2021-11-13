@@ -37,6 +37,8 @@
 }
 
 .main-content__title_width {
+    width: 1200px;
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -127,7 +129,7 @@
 }
 
 .main-content__mvInfo {
-    width: 50%;
+    width: 570px;
     height: 400px;
 
     display: flex;
@@ -162,7 +164,7 @@
 }
 
 .main-content__mv {
-    width: 50%;
+    width: 570px;
     height: 400px;
 
     display: flex;
@@ -198,7 +200,7 @@
 }
 
 .third-content__album {
-    width: 50%;
+    width: 570px;
     height: 600px;
 
     display: flex;
@@ -211,7 +213,7 @@
 }
 
 .third-content__albumInfo {
-    width: 50%;
+    width: 570px;
     height: 600px;
 
     padding: 87px 0px 0px 30px;

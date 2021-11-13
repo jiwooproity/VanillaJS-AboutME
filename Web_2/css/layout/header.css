@@ -16,9 +16,13 @@
     --info-bold: 17px;
 }
 
-.container {
+.header__toggle__btn {
+    display: none;
+}
+
+.main {
     width: 100%;
-    height: 2000px;
+    height: 3000px;
 
     position: relative;
 }
@@ -32,8 +36,6 @@
     align-items: center;
 
     background-color: white;
-
-    z-index: -1;
 }
 
 .main-log__width {
@@ -46,8 +48,10 @@
 }
 
 .main-log__list {
+    width: 570px;
+
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
 }
 
@@ -120,7 +124,7 @@
 }
 
 .main-nav__right {
-    width: 50%;
+    width: 570px;
     height: 60px;
 
     display: flex;
@@ -147,4 +151,24 @@
     cursor: pointer;
 
     color: var(--text-color);
+}
+
+.scroll_graph {
+    width: 100%;
+    height: 2px;
+
+    position: sticky;
+    top: 60px;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.scroll_graph_color {
+    width: 0%;
+    height: 2px;
+    background-color: rgb(92, 68, 171);
+
+    transition: width 1s ease-in-out;
 }

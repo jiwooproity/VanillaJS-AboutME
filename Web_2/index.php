@@ -7,49 +7,15 @@
         <title>브레이브걸스 & 피어레스</title>
     </head>
     <body>
-        <div class="container">
-            <div class="main-log">
-                <div class="main-log__width">
-                    <ul class="main-log__list">
-                        <li class="main-log__item">
-                            <a class="main-log__link" href="#">로그인</a>
-                        </li>
-                        <li class="main-log__item">
-                            <a class="main-log__link" href="#">회원가입</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <header class="main-header">
-                <div class="main-header__width">
-                    <nav class="main-nav__left">
-                        <h1 class="main-nav__logo">
-                            <a href="index.php">BRAVEGIRLS</a>
-                        </h1>
-                    </nav>
-                    <div class="main-nav__right">
-                        <ul class="main-nav__list">
-                            <li class="main-nav__item">
-                                <a id="cd_menu" class="main-nav__link">앨범</a>
-                            </li>
-                            <li class="main-nav__item">
-                                <a class="main-nav__link" href="#">멤버</a>
-                            </li>
-                            <li class="main-nav__item">
-                                <a class="main-nav__link" href="http://www.bravesound.com/" target="_blank">엔터테이먼트</a>
-                            </li>
-                            <li class="main-nav__item">
-                                <a class="main-nav__link" href="https://cafe.daum.net/BraveGirls0409" target="_blank">팬카페</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </header>
+        <div class="main">
+
+            <?php
+                include "header.html";
+            ?>  <!-- header.html 불러오기 -->
 
             <div class="main-content">
                 <div class="main-content__width">
                     <h2 class="main-content__subtitle">
-                        브레이브걸스 1854일의 기적
                     </h2>
                     <div class="main-content__title_width">
                         <h1 class="main-content__title"></h1>
@@ -65,7 +31,7 @@
                         <span class="material-icons arrow_size focus_ani">expand_more</span>
                     </div>
                 </div>
-            </div>
+            </div> <!-- 상단 / 롤린 Rollin' 인기가요 1위 / 타이틀 -->
 
             <div class="content-container">
                 <div class="main-content__encore" id="move-encore">
@@ -92,7 +58,7 @@
                             <span class="main-content__part">Part. 2</span>
                             <h1>SUMMER QUEEN</h1>
                             <h2>2021.06.17 | The 5th Mini Album</h2>
-                            <p>2021년 6월 17일에 발매된 <span>브레이브걸스의 미니 5집 앨범</span>이다.</p>
+                            <p>2021년 6월 17일에 발매된 <span class="black_span">브레이브걸스의 미니 5집 앨범</span>이다.</p>
                             <p>롤린의 역주행 이후 발매된 첫 번째 앨범이며, 현 4명의 멤버만 참여한
                             </p>
                             <p>
@@ -113,39 +79,23 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> <!-- 컨텐츠 목록 -->
 
-            <footer class="footer">
-                <div class="footer__info">
-                    <p>브레이브걸스 웹 디자인 / By.Design._.so</p>
-                </div>
-            </footer>
+            <?php
+                include "footer.html";
+            ?> <!-- footer.html 불러오기 -->
+
         </div>
 
-        <div class="moveTop">
-            <span class="material-icons">expand_less</span>
-        </div>
+        <?php
+            include "scrollLayout.html";
+            include "move_top_button.html";
+            include "sub_menu.html";
+        ?> <!-- 서브 메뉴 및 상단 이동 버튼 / sub_menu.html, move_top_button.html 불러오기 -->
 
-        <div class="sub_menu">
-            <div class="sub_width">
-                <ul class="sub_list">
-                    <li class="sub_item">
-                        <a href="#">Rollin'</a>
-                    </li>
-                    <li class="sub_item">
-                        <a href="#">운전만해</a>
-                    </li>
-                    <li class="sub_item">
-                        <a class="chimatbaram__link">치맛바람</a>
-                    </li>
-                    <li class="sub_item">
-                        <a href="#">술버릇</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-
+        <script src="js/leftScrollBar.js"></script>
         <script src="js/header_change.js"></script>
+        <script src="js/text_1854.js"></script>
         <script src="js/text_Typing.js"></script>
         <script src="js/scroll.js"></script>
         <script src="js/move.js"></script>
