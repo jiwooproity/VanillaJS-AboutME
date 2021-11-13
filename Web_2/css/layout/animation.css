@@ -14,3 +14,18 @@
         padding-top: 20px;
     }
 }
+
+.fade-in-animation {
+    animation: fade-in 1.4s;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        transform: scale(.7, .7);
+    }
+
+    to {
+        opacity: 1;
+    }
+}
