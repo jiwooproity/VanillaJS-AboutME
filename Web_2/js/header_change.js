@@ -25,8 +25,9 @@ window.addEventListener("scroll", function() {
 })
 
 window.addEventListener("scroll", function() {
-    let scrollY = window.scrollY;
+    let windowScrollY = window.scrollY;
     let totalY = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-    let percentage = (scrollY / totalY) * 100;
+
+    let percentage = (windowScrollY / totalY) * 100;
     scrollGraph.style.width = percentage + "%";
 })
