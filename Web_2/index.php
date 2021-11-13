@@ -52,7 +52,7 @@
                 <div class="third-content">
                     <div class="third-content__width">
                         <div class="third-content__album">
-                            <img class="third-content__albumImg" src="img/썸머퀸_사진.png">
+                            <img class="third-content__albumImg" src="img/썸머퀸_사진.png" alt="">
                         </div>
                         <div class="third-content__albumInfo">
                             <span class="main-content__part">Part. 2</span>
@@ -90,7 +90,6 @@
         <?php
             include "scrollLayout.html";
             include "move_top_button.html";
-            include "sub_menu.html";
         ?> <!-- 서브 메뉴 및 상단 이동 버튼 / sub_menu.html, move_top_button.html 불러오기 -->
 
         <script src="js/leftScrollBar.js"></script>

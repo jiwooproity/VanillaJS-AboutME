@@ -13,12 +13,14 @@ window.addEventListener("scroll", function () {
             current[0].className = current[0].className.replace(" scrollActive", "");
             scrollItem[0].className += " scrollActive";
         }
+
     } else if(scrollHeight >= part_1Top - header_2 && scrollHeight < part_2Top - header_2) {
         for(index = 0; index < scrollItem.length; index++) {
             const current = document.getElementsByClassName("scrollActive");
             current[0].className = current[0].className.replace(" scrollActive", "");
             scrollItem[1].className += " scrollActive";
         }
+
     } else if(scrollHeight >= part_2Top - header_2) {
         for(index = 0; index < scrollItem.length; index++) {
             const current = document.getElementsByClassName("scrollActive");

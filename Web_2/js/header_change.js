@@ -14,6 +14,7 @@ window.addEventListener("scroll", function() {
         for(const menu_change of header_menu) {
             menu_change.style.color = "white";
         }
+
     } else {
         header.style.backgroundColor = "white";
         header_logo.style.color = "rgba(98, 55, 255, 0.8)";
