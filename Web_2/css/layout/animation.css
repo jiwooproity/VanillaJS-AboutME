@@ -5,9 +5,15 @@
     animation-direction: alternate;
 }
 
-.focus_image {
-    bottom: 50px;
+.fade-in-animation {
+    animation-name: fade-in;
+    animation-duration: 1.5s;
 }
+
+.focus_image {
+    transform: translateY(-30px);
+}
+
 
 @keyframes focus_animation {
     from {
