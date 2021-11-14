@@ -16,11 +16,11 @@ setInterval(getDate, 100);
 
 /* map()을 활용한 URL - Location.href 이동 코드 */
 
-const url = ["nyong2ya", "braveg_yj", "bg_eunji92", "u.nalee"];
+const url = ["nyong2ya/", "braveg_yj/", "bg_eunji92/", "u.nalee/"];
 
 locationWrap.map((item, index) => {
     item.addEventListener("click", function () {
-        location.href=`https://www.instagram.com/${url[index]}`;
+        window.open(`https://www.instagram.com/${url[index]}`);
     })
 });
 

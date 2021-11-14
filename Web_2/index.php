@@ -79,6 +79,14 @@
                         </div>
                     </div>
                 </div>
+
+                <div id="bg-image">
+                    <div class="fourth-content">
+                    </div>
+                </div>
+                <div class="last-content">
+
+                </div>
             </div> <!-- 컨텐츠 목록 -->
 
             <?php
@@ -87,12 +95,13 @@
 
         </div>
 
+        <!--  include "scrollLayout.html"; -->
+
         <?php
-            include "scrollLayout.html";
             include "move_top_button.html";
         ?> <!-- 서브 메뉴 및 상단 이동 버튼 / sub_menu.html, move_top_button.html 불러오기 -->
 
-        <script src="js/leftScrollBar.js"></script>
+        <!-- <script src="js/leftScrollBar.js"></script> -->
         <script src="js/header_change.js"></script>
         <script src="js/text_1854.js"></script>
         <script src="js/text_Typing.js"></script>

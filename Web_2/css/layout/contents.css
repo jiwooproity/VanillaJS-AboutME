@@ -182,7 +182,7 @@
 
 .third-content {
     width: 100%;
-    height: 600px;
+    height: 500px;
     background-color: white;
 
     display: flex;
@@ -192,7 +192,7 @@
 
 .third-content__width {
     width: 1140px;
-    height: 600px;
+    height: 500px;
 
     display: flex;
     justify-content: center;
@@ -201,7 +201,7 @@
 
 .third-content__album {
     width: 570px;
-    height: 600px;
+    height: 500px;
 
     display: flex;
     justify-content: center;
@@ -210,11 +210,13 @@
 
 .third-content__albumImg {
     width: 560px;
+
+    padding-top: 60px;
 }
 
 .third-content__albumInfo {
     width: 570px;
-    height: 600px;
+    height: 500px;
 
     padding: 87px 0px 0px 30px;
 
@@ -278,4 +280,19 @@
 
 .active {
     background-color: rgba(66, 20, 236, 0.8);
+}
+
+.fourth-content {
+    width: 100%;
+    height: 600px;
+}
+
+#bg-image {
+    background: #2d2d2d url("../../img/main-backgroud_img.png") no-repeat fixed center;
+}
+
+.last-content {
+    width: 100%;
+    height: 500px;
+    background-color: white;
 }

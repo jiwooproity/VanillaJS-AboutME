@@ -8,7 +8,7 @@ const scrollGraph = document.querySelector(".scroll_graph_color");
 
 window.addEventListener("scroll", function() {
     if(window.scrollY > headerHeight) {
-        header.style.backgroundColor = "rgb(141,135,227)";
+        header.style.backgroundColor = "rgba(34,34,37,0.82)";
         header_logo.style.color = "white";
 
         for(const menu_change of header_menu) {
