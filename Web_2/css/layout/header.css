@@ -166,7 +166,7 @@
 .scroll_graph_color {
     width: 0%;
     height: 2px;
-    background-color: rgb(145, 123, 255);
+    background-color: rgb(85, 66, 166);
 
     transition: width 1s ease-in-out;
 }

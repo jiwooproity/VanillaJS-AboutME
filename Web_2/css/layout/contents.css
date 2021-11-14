@@ -285,6 +285,74 @@
 .fourth-content {
     width: 100%;
     height: 600px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fourth-content__width {
+    width: 1140px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fourth-content__info {
+    width: 570px;
+    height: 600px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.fourth-content__part {
+    font-weight: 600;
+    font-size: 30px;
+
+    margin-bottom: 50px;
+
+    color: rgba(161, 142, 255, 0.8);
+}
+
+.fourth-content__info h1 {
+    font-size: 40px;
+
+    color: white;
+}
+
+.fourth-content__info h2 {
+    padding: 10px 0px 50px 0px;
+
+    color: white;
+}
+
+.fourth-content__info p {
+    font-size: 15px;
+
+    padding: 5px 0px 5px 0px;
+
+    color: white;
+}
+
+.fourth-content__blank {
+    width: 570px;
+    height: 600px;
+}
+
+.fourth-music__link {
+    font-weight: 600;
+    text-decoration: none;
+
+    color: white;
+}
+
+.fourth-mIcons__width span {
+    padding-top: 4px;
+    color: white;
 }
 
 #bg-image {

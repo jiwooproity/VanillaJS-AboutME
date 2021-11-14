@@ -82,6 +82,29 @@
 
                 <div id="bg-image">
                     <div class="fourth-content">
+                        <div class="fourth-content__width">
+                            <div class="fourth-content__info">
+                                <span class="fourth-content__part">Part. 3</span>
+                                <h1>《 After 'We Ride' 》</h1>
+                                <h2>2021.08.23 | The 5th Mini Album Repackage </h2>
+                                <p>2021년 8월 23일에 발매된 <span class="black_span">브레이브걸스의 미니 5집 리패키지 앨범</span>이다.</p>
+                                <p>작년 8월에 발매한 <span class="black_span">'운전만해 We Ride'</span>의 뒷이야기를 담아낸 노래이다.</p>
+                                <div class="content-music__frame">
+                                    <div class="content-music__width">
+                                        <a class="fourth-music__link" href="https://www.youtube.com/watch?v=ZIZECe-55HY" target="_blank">
+                                            유튜브에서 듣기
+                                        </a>
+                                    </div>
+                                    <div class="fourth-mIcons__width">
+                                        <span class="material-icons">
+                                            skip_next
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="fourth-content__blank">
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="last-content">

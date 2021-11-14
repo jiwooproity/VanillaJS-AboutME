@@ -5,6 +5,10 @@
     animation-direction: alternate;
 }
 
+.focus_image {
+    bottom: 50px;
+}
+
 @keyframes focus_animation {
     from {
         padding-top: 0px;
