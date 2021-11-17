@@ -107,8 +107,25 @@
                         </div>
                     </div>
                 </div>
-                <div class="last-content">
+                <div class="last-content__frame">
+                    <div class="last-content__width">
 
+                        <div class="last-content__slide fade_slide_active">
+                            <img class="last-content__slideImg" src="img/slide_1.jpg">
+                        </div>
+
+                        <div class="last-content__slide fade_slide_active">
+                            <img class="last-content__slideImg" src="img/slide_2.jpg">
+                        </div>
+
+                        <div class="last-content__slide fade_slide_active">
+                            <img class="last-content__slideImg" src="img/slide_3.jpg">
+                        </div>
+
+                        <div class="nextBtn"><span>></span></div>
+                        <div class="backBtn"><span><</span></div>
+
+                    </div>
                 </div>
             </div> <!-- 컨텐츠 목록 -->
 
@@ -130,5 +147,6 @@
         <script src="js/text_Typing.js"></script>
         <script src="js/scroll.js"></script>
         <script src="js/move.js"></script>
+        <script src="js/slide.js"></script>
     </body>
 </html>
