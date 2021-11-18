@@ -33,6 +33,27 @@
                 </div>
             </div> <!-- 상단 / 롤린 Rollin' 인기가요 1위 / 타이틀 -->
 
+            <div class="last-content__frame">
+                <div class="last-content__width">
+
+                    <div class="last-content__slide fade_slide_active">
+                        <img class="last-content__slideImg" src="img/slide_1.jpg">
+                    </div>
+
+                    <div class="last-content__slide fade_slide_active">
+                        <img class="last-content__slideImg" src="img/slide_2.jpg">
+                    </div>
+
+                    <div class="last-content__slide fade_slide_active">
+                        <img class="last-content__slideImg" src="img/slide_3.jpg">
+                    </div>
+
+                    <div class="nextBtn"><span>></span></div>
+                    <div class="backBtn"><span><</span></div>
+
+                </div>
+            </div>
+
             <div class="content-container">
                 <div class="main-content__encore" id="move-encore">
                     <div class="main-content__mvWidth">
@@ -105,26 +126,6 @@
                             <div class="fourth-content__blank">
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="last-content__frame">
-                    <div class="last-content__width">
-
-                        <div class="last-content__slide fade_slide_active">
-                            <img class="last-content__slideImg" src="img/slide_1.jpg">
-                        </div>
-
-                        <div class="last-content__slide fade_slide_active">
-                            <img class="last-content__slideImg" src="img/slide_2.jpg">
-                        </div>
-
-                        <div class="last-content__slide fade_slide_active">
-                            <img class="last-content__slideImg" src="img/slide_3.jpg">
-                        </div>
-
-                        <div class="nextBtn"><span>></span></div>
-                        <div class="backBtn"><span><</span></div>
-
                     </div>
                 </div>
             </div> <!-- 컨텐츠 목록 -->

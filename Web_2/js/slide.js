@@ -1,3 +1,5 @@
+const slideImg = Array.from(document.querySelectorAll(".last-content__slideImg"));
+
 const nextBtn = document.querySelector(".nextBtn");
 const backBtn = document.querySelector(".backBtn");
 
@@ -7,7 +9,6 @@ slide(slideIndex);
 
 function plusSlide() {
     slide(slideIndex += 1);
-    console.log(slideIndex);
 }
 
 function currentSlide() {
@@ -32,3 +33,13 @@ function slide(index) {
 
 nextBtn.addEventListener("click", plusSlide);
 backBtn.addEventListener("click", currentSlide);
+
+//슬라이드 이미지 클릭 시 Map으로 배치된 이미지에 따라 아래 배열에 정해진 링크로 이동
+
+const slideLink = ["watch?v=ZIZECe-55HY", "watch?v=e70PkoJhQYM", "watch?v=3cZrxpK2EAQ&list=OLAK5uy_nLK2CTN-pb473REzQOpZvKqzdQkGuVnLw"];
+
+slideImg.map((item, imgIndex) => {
+    item.addEventListener("click", function() {
+        window.open('https://www.youtube.com/'+slideLink[imgIndex]);
+    })
+});
