@@ -22,7 +22,7 @@
 
 .register__width {
     width: 1200px;
-    height: 650px;
+    height: 750px;
 
     display: flex;
     justify-content: center;
@@ -44,6 +44,15 @@
     border-bottom: 1px solid #c9c9c9;
 
     transition: 0.2s ease-in-out;
+}
+
+.register__phone-num {
+    width: 380px;
+}
+
+.register__phone-num input {
+    width: 115px;
+    text-align: center;
 }
 
 .register__form input:hover {
