@@ -10,7 +10,7 @@
         <div class="main">
 
             <?php
-                include "header.html";
+                include "header.php";
             ?>  <!-- header.html 불러오기 -->
 
             <div class="main-content">

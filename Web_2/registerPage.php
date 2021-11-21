@@ -9,7 +9,7 @@
     <body>
         <div class="main">
             <?php
-            include "header.html";
+            include "header.php";
             ?>
 
             <div class="register__title__frame">

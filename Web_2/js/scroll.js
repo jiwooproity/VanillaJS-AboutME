@@ -5,7 +5,7 @@ const targetnav = document.querySelector(".main-header").offsetHeight;
 
 const targetthird = document.querySelector(".third-content").offsetTop;
 
-/* 2021.11.14 앨범 > 서브 메뉴 삭제 */
+// 2021.11.14 앨범 > 서브 메뉴 삭제
 
 function  scrollmove() {
     window.scroll({top: targetDiv - targetnav, behavior: "smooth"})

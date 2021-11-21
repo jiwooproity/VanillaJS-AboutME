@@ -5,6 +5,8 @@ const backBtn = document.querySelector(".backBtn");
 
 let slideIndex = 1;
 
+setInterval(plusSlide, 15000);
+
 slide(slideIndex);
 
 function plusSlide() {

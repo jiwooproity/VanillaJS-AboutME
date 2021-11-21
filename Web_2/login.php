@@ -9,7 +9,7 @@
 <body>
 <div class="main">
     <?php
-    include "header.html";
+    include "header.php";
     ?>
 
     <div class="login__title__frame">
@@ -23,7 +23,7 @@
 
     <div class="login__frame">
         <div class="login__width">
-            <form class="login__form">
+            <form class="login__form" action="OKayPage/login_ok.php" method="post">
                 <p>아이디</p>
                 <input type="text" name="id" placeholder="아이디를 입력해주세요.">
                 <p>비밀번호</p>
