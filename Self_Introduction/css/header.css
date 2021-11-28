@@ -1,7 +1,7 @@
 header {
     width: 100%;
 
-    padding: 40px 100px;
+    padding: 20px 100px;
 
     position: absolute;
 
@@ -42,6 +42,8 @@ header {
     background: var(--black);
 
     transition: 0.5s;
+
+    cursor: pointer;
 }
 
 .indicator {
@@ -86,6 +88,8 @@ header {
 }
 
 .header__menu {
+    margin-top: 4px;
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -111,4 +115,42 @@ header {
     font-size: 1.5em;
 
     margin-left: 15px;
+}
+
+.header__toggle__menu {
+    font-size: 25px;
+
+    padding-left: 10px;
+
+    display: none;
+
+    cursor: pointer;
+}
+
+@media (max-width: 966px) {
+    header {
+        padding: 20px;
+    }
+
+    .header__menu ul {
+        display: none;
+    }
+
+    .header__toggle__menu {
+        display: block;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 20px;
+    }
+
+    .header__menu ul {
+        display: none;
+    }
+
+    .header__toggle__menu {
+        display: block;
+    }
 }
