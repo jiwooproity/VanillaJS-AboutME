@@ -1,0 +1,22 @@
+@import "header.css";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--white);
+    transition: 0.5s;
+}
+
+:root {
+    --black: #333;
+    --white: #fff;
+}
+
+.dark {
+    --black: #fff;
+    --white: #333;
+}
