@@ -1,5 +1,7 @@
 @import "header.css";
 @import "main.css";
+@import "content.css";
+@import "submenu.css";
 
 * {
     margin: 0;
@@ -9,17 +11,22 @@
 
 body {
     background: var(--white);
-    transition: 0.5s;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+    display: none;
 }
 
 :root {
-    --black: #333;
+    --black: #222;
     --white: #fff;
 }
 
 .dark {
     --black: #fff;
-    --white: #333;
+    --white: #222;
 }
 
 .dark .image__mask {
