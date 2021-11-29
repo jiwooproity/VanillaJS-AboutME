@@ -30,10 +30,8 @@ header {
 }
 
 .header__toggle {
-    width: 50px;
-    height: 25px;
-
-    margin-top: 2.8px;
+    width: 70px;
+    height: 30px;
 
     position: relative;
 
@@ -49,8 +47,8 @@ header {
 }
 
 .indicator {
-    width: 25px;
-    height: 25px;
+    width: 35px;
+    height: 30px;
 
     text-align: center;
 
@@ -86,12 +84,10 @@ header {
 }
 
 .indicator.active {
-    left: 25px;
+    left: 35px;
 }
 
 .header__menu {
-    margin-top: 4px;
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -120,7 +116,9 @@ header {
 }
 
 .header__toggle__menu {
-    font-size: 25px;
+    font-size: 30px;
+
+    line-height: 30px;
 
     padding-left: 10px;
 
