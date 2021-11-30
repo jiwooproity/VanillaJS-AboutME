@@ -17,6 +17,9 @@ header__toggle.addEventListener('click', () => {
     maskTopDark.classList.toggle('active');
     maskBottomDark.classList.toggle('active');
     moon.classList.toggle('active');
+
+    
+
     sun.classList.toggle('active');
 
     body.classList.toggle('dark');

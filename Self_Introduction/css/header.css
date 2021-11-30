@@ -16,7 +16,7 @@ header {
 
 .header__logo {
     font-size: 2em;
-    font-weight: 700;
+    font-weight: 600;
 
     letter-spacing: 0.05em;
 
@@ -106,13 +106,15 @@ header {
 }
 
 .header__menu ul li {
-    text-transform: uppercase;
-
-    line-height: 33px;
-    
     font-size: 1.5em;
+    font-weight: 600;
+
+    text-transform: uppercase;
+    line-height: 33px;
 
     margin-left: 15px;
+
+    cursor: pointer;
 }
 
 .header__toggle__menu {
