@@ -117,9 +117,21 @@ header {
     cursor: pointer;
 }
 
-.header__toggle__menu {
-    font-size: 30px;
+.header__menu ul li::after {
+    content: '';
+    width: 0px;
+    height: 2px;
+    display: block;
+    background-color: var(--black);
 
+    transition: 0.5s ease-in-out;
+}
+
+.header__menu ul li:hover::after {
+    width: 100%;
+}
+
+.header__toggle__menu {
     line-height: 30px;
 
     padding-left: 10px;
@@ -127,6 +139,69 @@ header {
     display: none;
 
     cursor: pointer;
+}
+
+.header__toggle__btn {
+    width: 50px;
+    height: 50px;
+
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+}
+
+.header__toggle__btn span {
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    
+    border-radius: 5px;
+
+    background-color: var(--black);
+
+    transition: transform 0.2s;
+}
+
+.header__toggle__btn span:nth-child(1) {
+    left: 10px;
+
+    transform: translateY(-11px);
+
+    transition: transform 1s;
+}
+
+.header__toggle__btn span:nth-child(2) {
+    left: 10px;
+
+    transform: translateY(11px);
+    
+    transition: transform 0.8s;
+}
+
+.header__toggle__btn.active span:nth-child(1) {
+    width: 30px;
+    
+    transform: translateY(0px) rotate(-315deg);
+}
+
+.header__toggle__btn.active span:nth-child(2) {
+    width: 30px;
+
+    transform: translateY(0px) rotate(315deg);
+}
+
+.header__toggle__btn.active span:nth-child(3) {
+    transform: translateX(50px);
+}
+
+@media (max-width: 1300px) {
+    header {
+        padding: 20px 40px;
+    }
 }
 
 @media (max-width: 966px) {

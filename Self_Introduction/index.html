@@ -8,33 +8,68 @@
         <title>자기소개</title>
     </head>
     <body>
+        <!-- Header 영역 로고, 스크린 전환, 메인 메뉴, @media. 서브 메뉴 - 토글 버튼 Start -->
         <header>
+            <!-- 로고 -->
             <a href="#" class="header__logo">STORY</a>
+            <!-- 로고 -->
+
+            <!-- Header 영역 오른쪽 부분 -->
             <div class="header__menu">
+
+                <!-- 스크린 전환 -->
                 <div class="header__toggle">
                     <i class="indicator">
                         <i class="fas fa-sun"></i>
                         <i class="fas fa-moon"></i>
                     </i>
                 </div>
+                <!-- 스크린 전환 -->
+
+                <!-- 메인 메뉴 -->
                 <ul>
                     <li class="header__menu-item">Home</li>
                     <li class="header__menu-item">About</li>
                     <li class="header__menu-item">Product</li>
                 </ul>
+                <!-- 메인 메뉴 -->
+
+                <!-- @media. 서브 메뉴 - 토글 버튼 -->
                 <div class="header__toggle__menu">
-                    <i class="fas fa-bars"></i>
+                    <div class="header__toggle__btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
                 </div>
+                <!-- @media. 서브 메뉴 - 토글 버튼 -->
+                
             </div>
+            <!-- Header 영역 오른쪽 부분 -->
+
         </header>
+        <!-- Header 영역 로고, 스크린 전환, 메인 메뉴, @media. 서브 메뉴 - 토글 버튼 End -->
+
+        <!-- @media. 서브 메뉴 Start -->
         <nav class="toggle__submenu">
             <ul>
-                <li><a><i class="fas fa-home"></i>Home</a></li>
-                <li><a><i class="fas fa-address-card"></i>About</a></li>
-                <li><a><i class="fas fa-archive"></i>PRODUCT</a></li>
+                <li><a>Home</a></li>
+                <li><a>About</a></li>
+                <li><a>PRODUCT</a></li>
             </ul>
+
+            <div class="submenu__sci">
+                <li><a href="https://github.com/jiwooproity"><i class="fab fa-github-square"></i></a></li>
+                <li><a href="https://www.facebook.com/jiwooproity"><i class="fab fa-facebook-square"></i></a></li>
+                <li><a href="https://www.instagram.com/so.jiwoo_22/"><i class="fab fa-instagram-square"></i></a></li>
+            </div>
         </nav>
+        <!-- @media. 서브 메뉴 End -->
+
+        <!-- 메인 세션 영역 Start -->
         <section class="main">
+
+            <!-- 메인 세션 배경 영역 - Sun  오브젝트, Moon 오브젝트, 스크린 전환 이미지 -->
             <img class="image__sun" src="img/sun.png">
             <img class="image__moon" src="img/moon.png">
             <div class="main__article">
@@ -44,6 +79,9 @@
                 <img class="image__mask-bottom-dark" src="img/travel_picture_bottom-dark.png">
                 <input class="main__title" type="text" value="THIS IS MY STORY" placeholder="PUT YOUR MESSAGE"></input>
             </div>
+            <!-- 메인 세션 배경 영역 - Sun  오브젝트, Moon 오브젝트, 스크린 전환 이미지 -->
+
+            <!-- 제작 유저 깃허브, 페이스북, 인스타그램 배치 영역 Start -->
             <ul class="sci">
                 <li>
                     <div>
@@ -70,37 +108,27 @@
                     </div>
                 </li>
             </ul>
+            <!-- 제작 유저 깃허브, 페이스북, 인스타그램 배치 영역 End -->
+
+            <!-- Copyright 영역 Start -->
             <div class="main__copyright">
                 <span>Copyright 2021. Sojiwoo. All rights reserved.</span>
             </div>
+            <!-- Copyright 영역 End -->
+
         </section>
-        <section class="article-2">
-            <div class="article-2__arrowic">
-                <i class="fas fa-chevron-down"></i>
-            </div>
-            <div class="article-2__frame">
-                <div class="article-2__title">
-                    <h1>PROFILE</h1>
-                    <div class="profile__infos">
-                        <p><span>NAME - </span> SO JIWOO</p>
-                        <p><span>YEAR - </span> 22</p>
-                        <P><span>HOBBY - </span> PROGRAMMING</P>
-                    </div>
-                </div>
-                <div class="profile__box">
-                    <img class="profile__image" src="img/profile_me.png">
-                    <div class="profile__info">
-                        <h1>Hi :)</h1>
-                        <p>My name is Sojiwoo</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <footer>
+        <!-- 메인 세션 영역 End -->
+
+        <section class="section">
             <div>
-                <span></span>
+
             </div>
+        </section>
+
+        <!-- Footer 영역 Start -->
+        <footer>
         </footer>
+        <!-- Footer 영역 End -->
 
         <script src="js/toggleBtn.js"></script>
         <script src="js/navScroll.js"></script>

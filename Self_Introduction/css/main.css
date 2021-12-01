@@ -6,8 +6,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    padding-bottom: 30px;
 }
 
 .image__moon {
@@ -152,8 +150,10 @@
 
 .main__title {
     width: 100%;
+    
     font-size: 100px;
     font-weight: 600;
+    text-transform: uppercase;
     letter-spacing: 4px;
 
     position: absolute;
@@ -177,9 +177,9 @@
     outline: none;
 }
 
-
 .main__title::placeholder {
     font-size: 2vw;
+
     color: rgb(238, 246, 255);
 }
 
@@ -292,5 +292,7 @@
 @media (max-width: 768px) {
     .main__title {
         font-size: 9vw;
+
+        margin-bottom: 4px;
     }
 }
