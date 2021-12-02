@@ -2,16 +2,18 @@ const mainTitle = document.querySelector('.main__title');
 const mask = document.querySelector('.image__mask-light');
 const moonTouch = document.querySelector('.image__moon');
 const sunTouch = document.querySelector('.image__sun');
+const darkBottom = document.querySelector('.image__mask-bottom-dark');
+const lightBottom = document.querySelector('.image__mask-light');
 
 // Main Title - 아래 위로 올라오는 애니메이션
 function startTop() {
-    mainTitle.style.bottom = "50%";
+    mainTitle.classList.toggle('active');
 
-    setTimeout(index, 2000);
-
-    function index() {
-        mainTitle.style.zIndex = "3";
-    }
+    setTimeout(() => {
+        darkBottom.classList.toggle('index');
+        lightBottom.classList.toggle('index');
+        mainTitle.style.zIndex = "2";
+    }, 1900);
 }
 
 // Moon 이미지 위치 변경 값 - 흔들림 애니메이션
@@ -30,4 +32,4 @@ moonTouch.addEventListener('click', () => {
     moveMoon();
 })
 
-startTop();
+setTimeout(startTop, 200);

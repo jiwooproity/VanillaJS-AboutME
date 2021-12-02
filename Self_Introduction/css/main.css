@@ -2,10 +2,14 @@
     width: 100%;
     min-height: 100vh;
 
+    position: relative;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    overflow: hidden;
 }
 
 .image__moon {
@@ -19,7 +23,7 @@
 
     object-fit: contain;
 
-    z-index: 2;
+    z-index: 1;
 
     transition: all 3s ease-out;
 }
@@ -27,7 +31,7 @@
 .image__moon.active {
     bottom: 75%;
     opacity: 1;
-    z-index: 3;
+    z-index: 4;
 }
 
 .image__moon.active.touch {
@@ -55,6 +59,54 @@
     opacity: 0;
 }
 
+.gif__seagull {
+    position: absolute;
+    top: 20%;
+    left: -50%;
+
+    opacity: 1;
+
+    z-index: 5;
+
+    mix-blend-mode: screen;
+
+    transition: 3s;
+
+    overflow: hidden;
+}
+
+.gif__seagull.fly {
+    animation: seagullOpacity 18s linear infinite;
+}
+
+.gif__seagull.active {
+    opacity: 0;
+}
+
+@keyframes seagullOpacity {
+    0% {
+        opacity: 1;
+        transform: scale(1.2);
+    }
+
+    30% {
+        opacity: 0.2;
+        transform: translateY(-70px) scale(0.5);
+    }
+
+    70% {
+        opacity: 0.6;
+        left: 50%;
+        transform: translateY(70px);
+    }
+
+    100% {
+        opacity: 0;
+        left: 100%;
+        transform: translateY(-20px);
+    }
+}
+
 .main__article {
     width: 100%;
     min-height: 100vh;
@@ -74,8 +126,10 @@
     top: 0;
     left: 0;
 
+    opacity: 1;
+
     object-fit: cover;
-    transition: 0.5s;
+    transition: 3s;
 }
 
 .image__mask-light {
@@ -85,19 +139,25 @@
     position: absolute;
     top: -1px;
 
-    z-index: 2;
+    opacity: 1;
+
+    z-index: 3;
 
     user-select: none;
 
     object-fit: cover;
 
     mix-blend-mode: normal;
-    transition: 0.5s;
+    transition: 3s;
 }
 
 .image__mask-light.active {
     z-index: 2;
     opacity: 0;
+}
+
+.image__mask-light.index {
+    z-index: 2;
 }
 
 .image__mask-top-dark {
@@ -117,7 +177,7 @@
     object-fit: cover;
 
     mix-blend-mode: normal;
-    transition: 0.5s;
+    transition: 3s;
 }
 
 .image__mask-bottom-dark {
@@ -129,7 +189,7 @@
 
     opacity: 0;
 
-    z-index: 2;
+    z-index: 3;
 
     user-select: none;
 
@@ -137,7 +197,7 @@
 
     mix-blend-mode: normal;
 
-    transition: 0.5s;
+    transition: 3s;
 }
 
 .image__mask-top-dark.active {
@@ -148,6 +208,11 @@
     opacity: 1;
 }
 
+.image__mask-bottom-dark.index {
+    z-index: 2;
+}
+
+
 .main__title {
     width: 100%;
     
@@ -156,6 +221,8 @@
     text-transform: uppercase;
     letter-spacing: 4px;
 
+    opacity: 0;
+
     position: absolute;
     bottom: 0;
 
@@ -163,14 +230,93 @@
 
     color: white;
 
-    text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    text-shadow: 0px 0px 8px var(--shine);
 
     border: none;
     background-color: rgba(0, 0, 0, 0.0);
 
     z-index: 1;
 
-    transition: bottom 2s ease-in-out;
+    transition: bottom 2s ease-in-out,
+                opacity 2s ease-in-out,
+                text-shadow 2s ease-in-out;
+}
+
+.main__title.active {
+    opacity: 1;
+    bottom: 50%;
+}
+
+.main__time {
+    width: 100%;
+    
+    font-size: 100px;
+    font-weight: 600;
+    letter-spacing: 4px;
+
+    opacity: 0;
+
+    position: absolute;
+    bottom: 0;
+
+    display: flex;
+    justify-content: center;
+
+    color: white;
+
+    text-shadow: 0px 0px 8px var(--shine);
+
+    z-index: 1;
+
+    transition: bottom 2s ease-in-out,
+                opacity 2s ease-in-out,
+                text-shadow 2s ease-in-out;
+}
+
+.main__time span {
+    font-family: 'LAB디지털';
+    font-weight: 400;
+
+    letter-spacing: 5px;
+}
+
+.time__type {
+    width: 100%;
+    margin-top: 26px;
+    margin-right: 5px;
+    text-align: end;
+
+    line-height: 100px;
+    font-size: 25px;
+}
+
+.time__second {
+    width: 100%;
+    margin-top: 26px;
+    margin-left: 3px;
+    text-align: start;
+
+    line-height: 100px;
+    font-size: 25px;
+
+    opacity: 0;
+}
+
+.time__second.active {
+    opacity: 1;
+}
+
+.main__time.active {
+    opacity: 1;
+    bottom: 48.5%;
+}
+
+.time__middle {
+    opacity: 0;
+}
+
+.time__middle.active {
+    opacity: 1;
 }
 
 .main__title:focus {
@@ -274,9 +420,41 @@
     right: 0;
     bottom: 0;
 
-    z-index: 2;
+    z-index: 3;
 
     color: var(--black);
+}
+
+.content__arrow {
+    font-size: 40px;
+    color: var(--black);
+
+    position: absolute;
+    bottom: 2%;
+
+    z-index: 3;
+
+    transition: color 3s;
+
+    animation: arrowAnimation 1s ease-in-out infinite;
+
+    cursor: pointer;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content__arrow::before {
+    font-size: 15px;
+    font-weight: 400;
+
+    content: '아래로';
+
+    display: block;
+
+    z-index: 3;
 }
 
 @media (max-width: 966px) {
@@ -287,6 +465,10 @@
     .main__copyright {
         display: none;
     }
+
+    .content__arrow {
+        display: none;
+    }
 }
 
 @media (max-width: 768px) {
@@ -294,5 +476,163 @@
         font-size: 9vw;
 
         margin-bottom: 4px;
+    }
+
+    .content__arrow {
+        display: none;
+    }
+}
+
+/* Shooting Stars */
+
+.shooting-star {
+    width: 100%;
+    height: 100vh;
+    
+    top: 0;
+    left: 0;
+    position: absolute;
+
+    opacity: 0;
+
+    transition: opacity 7s;
+
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.shooting-star.active {
+    opacity: 1;
+}
+
+.shooting-star span {
+    position: absolute;
+    top: -10%;
+    left: 80%;
+
+    z-index: 1;
+
+    width: 5px;
+    height: 5px;
+
+    opacity: 0;
+
+    border-radius: 50%;
+
+    background-color: #fff;
+
+    box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.1),
+                0px 0px 0px 4px rgba(255, 255, 255, 0.1),
+                0px 0px 15px rgba(255, 255, 255, 1);
+
+    transition: opacity 7s;
+}
+
+.shooting-star.active span {
+    opacity: 1;
+    animation: animateStar 7s linear infinite;
+}
+
+.shooting-star span::before {
+    content: '';
+
+    width: 300px;
+    height: 1px;
+
+    opacity: 0;
+
+    top: -10%;
+    left: 100%;
+
+    position: absolute;
+
+    z-index: 1;
+
+    opacity: 0;
+
+    transform: translateY(100%);
+
+    background: linear-gradient(90deg, #fff, transparent);
+
+    transition: opacity 7s;
+}
+
+.shooting-star.active span::before {
+    opacity: 0.2;
+}
+
+.shooting-star span:nth-child(2) {
+    left: 50%;
+    animation-delay: 7s;
+    animation-duration: 4s;
+}
+
+.shooting-star span:nth-child(3) {
+    left: 30%;
+    animation-delay: 7s;
+    animation-duration: 4.5s;
+}
+
+.shooting-star span:nth-child(4) {
+    left: 100%;
+    animation-delay: 7s;
+    animation-duration: 3.5s;
+}
+
+.shooting-star span:nth-child(5) {
+    left: 65%;
+    animation-delay: 7s;
+    animation-duration: 9s;
+}
+
+.shooting-star span:nth-child(6) {
+    left: 120%;
+    animation-delay: 5s;
+    animation-duration: 11s;
+}
+
+.shooting-star span:nth-child(7) {
+    left: 160%;
+    animation-delay: 5s;
+    animation-duration: 11s;
+}
+
+.shooting-star span:nth-child(8) {
+    left: 180%;
+    animation-delay: 5s;
+    animation-duration: 2s;
+}
+
+@keyframes animateStar {
+    0% {
+        transform: rotate(315deg) translateX(0);
+        opacity: 1;
+    }
+
+    30% {
+        opacity: 0.5;
+    }
+
+    70% {
+        opacity: 0.2;
+    }
+
+    100% {
+        transform: rotate(315deg) translateX(-98vh);
+        opacity: 0;
+    }
+}
+
+@keyframes arrowAnimation {
+    0% {
+        transform: translateY(5px);
+    }
+
+    50% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(5px);
     }
 }

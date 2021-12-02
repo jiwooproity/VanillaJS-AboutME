@@ -30,7 +30,8 @@
                 <ul>
                     <li class="header__menu-item">Home</li>
                     <li class="header__menu-item">About</li>
-                    <li class="header__menu-item">Product</li>
+                    <li class="header__menu-item">Time</li>
+                    <li class="header__menu-item">Project</li>
                 </ul>
                 <!-- 메인 메뉴 -->
 
@@ -66,20 +67,73 @@
         </nav>
         <!-- @media. 서브 메뉴 End -->
 
+        <!-- Project Logs 목록 Start -->
+        <div class="header__toggle__project">
+            <div class="header__toggle__active">
+                <h1>PROJECT LOG</h1>
+                <div class="logs">
+                    <p>21.11.26 HEADER 영역 - 상단 메뉴 구현</p>
+                    <p>21.11.27 메인 배경 제작</p>
+                    <p>21.11.27 라이트 모드, 다크 모드 구현</p>
+                    <p>21.11.28 해와 달 띄우기 구현</p>
+                    <p>21.11.28 달 클릭 이벤트 적용</p>
+                    <p>21.11.29 메인 타이틀 INPUT 적용</p>
+                    <p>21.11.29 좌측 하단 소셜 아이콘 링크 업로드</p>
+                    <p>21.11.29 FOOTER 영역 추가</p>
+                    <p>21.11.30 좌측 하단 소셜 아이콘 클릭 이벤트 적용</p>
+                    <p>21.11.30 @media 서브 메뉴 토글 버튼 - 애니메이션 구현</p>
+                    <p>21.12.01 서브 메뉴 - 애니메이션 적용</p>
+                    <p>21.12.01 HOME, ABOUT, PROJECT 기능 구현</p>
+                    <P>21.12.01 PROJECT LOG 목록 추가</P>
+                    <P>21.12.01 다크 모드 - 별똥별 오브젝트 구현</P>
+                    <P>21.12.01 라이트 모드 - 갈매기 오브젝트 구현</P>
+                    <P>21.12.02 메인 타이틀 / 시계 전환 버튼 구현</P>
+                    <P>21.12.02 시간 실시간 업데이트</P>
+                    <P>21.12.02 시간에 따른 낮과 밤 자동 변경 구현</P>
+                </div>
+            </div>
+        </div>
+        <!-- Project Logs 목록 End -->
+
         <!-- 메인 세션 영역 Start -->
         <section class="main">
 
             <!-- 메인 세션 배경 영역 - Sun  오브젝트, Moon 오브젝트, 스크린 전환 이미지 -->
             <img class="image__sun" src="img/sun.png">
             <img class="image__moon" src="img/moon.png">
+
+            <img class="gif__seagull fly" src="gif/seagull.gif">
+
             <div class="main__article">
                 <img class="image__main" src="img/travel_picture_top.png">
                 <img class="image__mask-light" src="img/travel_picture_bottom.png">
                 <img class="image__mask-top-dark" src="img/travel_picture_top-dark.png">
                 <img class="image__mask-bottom-dark" src="img/travel_picture_bottom-dark.png">
                 <input class="main__title" type="text" value="THIS IS MY STORY" placeholder="PUT YOUR MESSAGE"></input>
+                <h1 class="main__time">
+                    <span class="time__type">AM</span><span class="time__hours">00</span><span class="time__middle">:</span><span class="time__minutes">00</span><span class="time__second">00</span>
+                </h1>
             </div>
             <!-- 메인 세션 배경 영역 - Sun  오브젝트, Moon 오브젝트, 스크린 전환 이미지 -->
+
+            <!-- 별똥별 오브젝트 -->
+            <div class="shooting-star">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <!-- 별똥별 오브젝트 -->
+
+            <!-- 스크롤 화살표 -->
+            <div class="content__arrow">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <!-- 스크롤 화살표 -->
 
             <!-- 제작 유저 깃허브, 페이스북, 인스타그램 배치 영역 Start -->
             <ul class="sci">
@@ -134,6 +188,9 @@
         <script src="js/navScroll.js"></script>
         <script src="js/titleAnimation.js"></script>
         <script src="js/allTyping.js"></script>
+        <script src="js/toggleProject.js"></script>
+        <script src="js/arrowScroll.js"></script>
+        <script src="js/time.js"></script>
         <script src="https://kit.fontawesome.com/ef8b1ace87.js" crossorigin="anonymous"></script>
     </body>
 </html>

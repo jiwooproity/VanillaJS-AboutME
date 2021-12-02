@@ -3,7 +3,14 @@
 @import "submenu.css";
 @import "section.css";
 @import "footer.css";
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600&display=swap');
+@import "project.css";
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Work+Sans:wght@400;600&display=swap');
+@font-face {
+    font-family: 'LAB디지털';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/LAB디지털.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
 * {
     margin: 0;
@@ -18,7 +25,7 @@ body {
     -ms-overflow-style: none;
     scrollbar-width: none;
 
-    transition: all 0.5s;
+    transition: background-color 3s;
 }
 
 body::-webkit-scrollbar {
@@ -28,11 +35,13 @@ body::-webkit-scrollbar {
 :root {
     --black: #222;
     --white: #fff;
+    --shine: rgba(0, 0, 0, 0.2);
 }
 
 .dark {
     --black: #fff;
     --white: #222;
+    --shine: rgba(255, 245, 185, 0.8);
 }
 
 .dark .image__mask {

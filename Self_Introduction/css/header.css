@@ -93,6 +93,8 @@ header {
     align-items: center;
 
     color: var(--black);
+    
+    transition: 0.5s ease-in-out;
 }
 
 .header__menu ul {
@@ -142,8 +144,8 @@ header {
 }
 
 .header__toggle__btn {
-    width: 50px;
-    height: 50px;
+    width: 38px;
+    height: 38px;
 
     position: relative;
 
@@ -167,7 +169,7 @@ header {
 }
 
 .header__toggle__btn span:nth-child(1) {
-    left: 10px;
+    left: 4px;
 
     transform: translateY(-11px);
 
@@ -175,7 +177,7 @@ header {
 }
 
 .header__toggle__btn span:nth-child(2) {
-    left: 10px;
+    left: 4px;
 
     transform: translateY(11px);
     

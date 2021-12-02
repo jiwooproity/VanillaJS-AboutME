@@ -1,11 +1,4 @@
 const header = document.querySelector('header');
-const navmenu = Array.from(document.querySelectorAll('.header__menu-item'));
-
-const section_1 = document.querySelector('.section').offsetTop;
-
-navmenu[1].addEventListener('click', () => {
-    window.scroll({top: section_1 - 78, behavior: "smooth"});
-})
 
 window.addEventListener('scroll', () => {
     if(window.scrollY > 83) {
