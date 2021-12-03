@@ -50,6 +50,8 @@
     text-transform: uppercase;
 
     transition: 0.5s;
+
+    cursor: pointer;
 }
 
 .toggle__submenu ul li::before {
