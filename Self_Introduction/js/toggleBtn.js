@@ -46,6 +46,7 @@ if(Hnumber < 8 || Hnumber > 19) {
     seagull.classList.toggle('fly');
 
     // SUN & MOON 사진 모션 적용 값
+    
     moon.classList.toggle('active');
     sun.classList.toggle('active');
 

@@ -1,4 +1,49 @@
 .section {
     width: 100%;
     height: calc(100vh - 78px);
+
+    padding: 120px 20px;
+}
+
+.section__inner {
+    width: 1500px;
+
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: center;
+}
+
+.section__image {
+    width: calc(100%-1000px);
+}
+
+.section__image img {
+    width: 500px;
+
+    object-fit: cover;
+}
+
+.section__about {
+    width: 900px;
+    
+    padding: 0px 40px;
+}
+
+@media (max-width: 966px) {
+    .section__inner {
+        width: 1500px;
+    
+        margin: 0 auto;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .section__about {
+        width: 900px;
+        
+        padding: 20px 0px;
+    }
 }
