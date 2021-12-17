@@ -5,7 +5,7 @@ const headerToggleProject = document.querySelector('.header__toggle__project');
 const TitleChange = document.querySelector('.main__title');
 const TitleTime = document.querySelector('.main__time');
 
-const section_1 = document.querySelector('.section').offsetTop;
+const aboutSection = document.querySelector('.about__section').offsetTop;
 
 headerMenuArray.map((item, index) => {
     item.addEventListener('click', () => {
@@ -14,7 +14,7 @@ headerMenuArray.map((item, index) => {
         }
 
         else if (index == 1) {
-            window.scroll({top: section_1 - 78, behavior: "smooth"});
+            window.scroll({top: aboutSection - 78, behavior: "smooth"});
         } 
 
         else if (index == 2) {
