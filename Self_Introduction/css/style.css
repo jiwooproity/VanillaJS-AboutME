@@ -36,12 +36,14 @@ body::-webkit-scrollbar {
     --black: #222;
     --white: #fff;
     --shine: rgba(0, 0, 0, 0.2);
+    --darkblack: rgba(0, 0, 0, 0.2);
 }
 
 .dark {
     --black: #fff;
     --white: #222;
     --shine: rgba(255, 245, 185, 0.8);
+    --darkblack: rgba(0, 0, 0, 1);
 }
 
 .dark .image__mask {
