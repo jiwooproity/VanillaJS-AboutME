@@ -1,14 +1,12 @@
 .about__section {
     width: 100%;
-    height: calc(100vh - 78px);
+    height: 100%;
 
     padding: 65px 0px;
 
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    transition: all 0.5s ease-in-out;
 }
 
 .about__section h1 {
@@ -31,7 +29,7 @@
 .item {
     width: 300px;
 
-    margin: 20px 20px;
+    margin: 0px 40px;
     padding: 30px;
 
     display: flex;
@@ -39,7 +37,7 @@
     justify-content: center;
     align-items: center;
 
-    box-shadow: 4px 5px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 4px 5px 12px rgba(0, 0, 0, 0.2);
 
     border-radius: 10px;
 
@@ -58,10 +56,6 @@
 }
 
 @media (max-width: 966px) {
-    .about__section {
-        height: 100%;
-    }
-
     .about__section-container {
         flex-direction: column;
     }
