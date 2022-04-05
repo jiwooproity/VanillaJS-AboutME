@@ -19,10 +19,10 @@
 * 시계는 1초마다 깜빡이고 실시간으로 업데이트 됩니다.
 * 시계 오후 6시 기준으로 자동으로 시간이 되면 라이트 모드 혹은 다크 모드로 전환됩니다.
 
-VanillaJS 이해를 하기 위한 프로젝트
-
 <hr />
 
 Web URL : http://jiwooproity.dothome.co.kr/Self_Introduction/index.html
 
 <hr />
+
+VanillaJS 이해를 하기 위한 프로젝트
