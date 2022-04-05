@@ -17,4 +17,6 @@
 
 VanillaJS 이해를 하기 위한 프로젝트
 
+<hr />
+
 Web URL : http://jiwooproity.dothome.co.kr/Self_Introduction/index.html
